@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutFragment"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="FAQs"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/fragment_heading_bg"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="550dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <!-- Question 1 -->
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="      Is my data safe?"
+        android:background="@drawable/edittext_border"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="toggleAnswer(view)"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Yes, your data is secure as we employ SQLite database technology. All information is stored locally on your mobile device, ensuring complete confidentiality and no external data transmission."
+        android:visibility="gone" />
+
+    <!-- Question 2 -->
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="      Is it possible to recover my data?"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_border"
+        android:focusable="true"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="toggleAnswer" />
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Certainly, data recovery is within your control. You have the capability to effortlessly download your cards, enabling you to safeguard and store them wherever suits you best, ensuring a seamless and secure retrieval process."
+        android:visibility="gone" />
+
+    <!-- Question 3 -->
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:layout_marginTop="20dp"
+        android:text="      Is it possible to add new colors or flags?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="toggleAnswer" />
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Absolutely, you have the flexibility to customize colors and flags. You can seamlessly alter the background of your card to suit your preferences and achieve the desired aesthetic."
+        android:visibility="gone" />
+
+    <!-- Question 4 -->
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:layout_marginTop="20dp"
+        android:text="      Why does the app show ads?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:padding="8dp"
+        android:focusable="true"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="toggleAnswer" />
+
+    <TextView
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="The inclusion of ads within the app serves as a strategic avenue for the developer to monetize the application, providing users access to its features without incurring any charges. This symbiotic arrangement allows for the app's continued availability as a complimentary offering."
+        android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+        <LinearLayout
+            android:id="@+id/banner_main_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

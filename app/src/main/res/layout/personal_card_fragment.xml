@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E7EF "
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Personal Tasks"
+        android:textSize="25dp"
+
+        android:gravity="center"
+        android:id="@+id/heading"
+        android:textColor="@color/white"
+        android:background="@drawable/fragment_heading_bg" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_textcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="10dp"
+        android:divider="@color/black"
+        tools:ignore="InvalidId" />
+
+
+
+
+        <Button
+            android:id="@+id/create_button_textCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#1C1C1C"
+            android:text="Create Card" />
+
+
+</RelativeLayout>

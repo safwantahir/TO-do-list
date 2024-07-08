@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#E0E7EF"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enter Task Details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/fragment_heading_bg"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Card Name Field -->
+        <TextView
+            android:id="@+id/textViewCardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/EdittextCardName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/textViewCardName"
+            android:background="@drawable/edittext_border"
+            android:hint="Task name"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            />
+
+        <!-- Card Number Field -->
+        <TextView
+            android:id="@+id/textViewCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Task Details"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/EdittextCardName"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/EdittextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewCardNumber"
+            android:background="@drawable/edittext_border"
+            android:hint="Task details"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"/>
+
+        <!-- User Name Field -->
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+            android:layout_below="@id/EdittextCardNumber"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewUserName"
+            android:background="@drawable/edittext_border"
+            android:hint="Username"
+            android:visibility="gone"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"/>
+
+        <!-- Valid Thru Date Field -->
+        <TextView
+            android:id="@+id/textViewValidThruDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Due Date (MM/YY)"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/editTextUserName"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/EdittextValidThruDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewValidThruDate"
+            android:background="@drawable/edittext_border"
+            android:hint="Due date"
+            android:textColor="@color/black"
+            android:inputType="date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"/>
+
+        <!-- CVV Code Field -->
+        <TextView
+            android:id="@+id/textViewCVVCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CVV Code"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_below="@id/EdittextValidThruDate"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/EdittextCVVCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewCVVCode"
+            android:background="@drawable/edittext_border"
+            android:hint="CVV Code"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:inputType="number"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="#1C1C1C"
+            android:text="Submit" />
+        <LinearLayout
+            android:id="@+id/banner_main_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="1dp"
+            android:orientation="vertical" />
+
+
+
+    </LinearLayout>
+</ScrollView>
